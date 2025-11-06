@@ -1,7 +1,8 @@
 const action = require('./action');
 
 module.exports = (program, mergedConfig) => {
-  program.command('quickly')
+  program
+    .command('quickly')
     .description('A command with an optional argument with a default value.')
     .argument('[location]', 'The location to use.', 'local') // Default is 'local'
     .action(async (location, options, command) => {

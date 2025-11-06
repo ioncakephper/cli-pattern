@@ -1,7 +1,8 @@
 const action = require('./action');
 
 module.exports = (program, mergedConfig) => {
-  program.command('example')
+  program
+    .command('example')
     .description('An example command.')
     .argument('<argument>', 'An example argument.')
     .option('-o, --option <value>', 'An example option.', 'default')

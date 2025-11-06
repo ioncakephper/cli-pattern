@@ -9,7 +9,11 @@ const program = new Command();
 
 async function run() {
   // const moduleName = packageJson.name;
-  const {name = 'cli', version = '1.0.0', description = 'A CLI application'} = packageJson;
+  const {
+    name = 'cli',
+    version = '1.0.0',
+    description = 'A CLI application',
+  } = packageJson;
   const explorer = cosmiconfig(name);
 
   let config;
@@ -44,8 +48,7 @@ async function run() {
   program.configureHelp({
     sortSubcommands: true,
     sortOptions: true,
-    })
-
+  });
 
   if (process.argv.length <= 2) {
     program.help();

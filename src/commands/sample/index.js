@@ -1,8 +1,11 @@
 const action = require('./action');
 
 module.exports = (program, mergedConfig) => {
-  const command = program.command('sample')
-    .description('A sample command with an optional argument and several options.');
+  const command = program
+    .command('sample')
+    .description(
+      'A sample command with an optional argument and several options.'
+    );
 
   // Optional argument
   command.argument('[optionalArg]', 'An optional argument.');

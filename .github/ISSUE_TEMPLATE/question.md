@@ -1,7 +1,6 @@
 ---
 name: Question
 about: Ask a general question
-
 ---
 
 **Question**

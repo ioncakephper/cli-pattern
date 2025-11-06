@@ -23,9 +23,9 @@ function createLogger(options) {
       }
     },
     warn: (...args) => {
-        if (!quiet) {
-            console.warn('[WARN]', ...args);
-        }
+      if (!quiet) {
+        console.warn('[WARN]', ...args);
+      }
     },
     error: (...args) => {
       console.error('[ERROR]', ...args);
