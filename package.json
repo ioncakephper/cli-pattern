@@ -5,7 +5,13 @@
   "keywords": [
     "cli",
     "commander",
-    "cosmiconfig"
+    "cosmiconfig",
+    "dynamic commands",
+    "configuration",
+    "tool",
+    "utility",
+    "nodejs",
+    "javascript"
   ],
   "homepage": "https://github.com/ioncakephper/cli-pattern#readme",
   "bugs": {
@@ -27,8 +33,7 @@
     "config/",
     "README.md",
     "LICENSE",
-    "CONTRIBUTING.md",
-    "cli-pattern.config.js"
+    "CONTRIBUTING.md"
   ],
   "scripts": {
     "docs": "npx markdown-magic@3.7.0 **/*.md -c md.config.js",
