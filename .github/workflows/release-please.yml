@@ -1,0 +1,20 @@
+name: Release Please
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v4
+        id: release
+        with:
+          release-type: node
+          # package-name: cli-pattern
+          # You can customize the release-please configuration here if needed
+          # For example, to specify a different changelog path or commit message conventions
+          # config-file: .release-please-config.json
+          # manifest-file: .release-please-manifest.json
