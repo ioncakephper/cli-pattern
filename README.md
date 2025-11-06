@@ -2,7 +2,9 @@
 
 <!-- doc-gen BADGES -->
 
-[![npm version](https://img.shields.io/npm/v/cli-pattern.svg?style=for-the-badge)](https://www.npmjs.com/package/cli-pattern) [![npm downloads](https://img.shields.io/npm/dw/cli-pattern.svg?style=for-the-badge)](https://www.npmjs.com/package/cli-pattern) [![license](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://www.npmjs.com/package/cli-pattern) [![actions status](https://img.shields.io/github/actions/workflow/status/ioncakephper/cli-pattern/ci.yml?branch=main&style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/actions) [![codecov](https://img.shields.io/codecov/c/github/ioncakephper/cli-pattern?branch=main&style=for-the-badge)](https://codecov.io/gh/ioncakephper/cli-pattern) [![release](https://img.shields.io/github/v/release/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/releases) [![maintained](https://img.shields.io/github/commit-activity/y/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/graphs/commit-activity) [![stars](https://img.shields.io/github/stars/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/stargazers) [![forks](https://img.shields.io/github/forks/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/network/members) [![watchers](https://img.shields.io/github/watchers/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/watchers) [![last commit](https://img.shields.io/github/last-commit/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/commits) [![contributors](https://img.shields.io/github/contributors/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/graphs/contributors) [![issues](https://img.shields.io/github/issues/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/issues) [![pull requests](https://img.shields.io/github/issues-pr/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/pulls) [![repo size](https://img.shields.io/github/repo-size/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern) [![top language](https://img.shields.io/github/languages/top/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern) <!-- end-doc-gen -->
+[![npm version](https://img.shields.io/npm/v/cli-pattern.svg?style=for-the-badge)](https://www.npmjs.com/package/cli-pattern) [![npm downloads](https://img.shields.io/npm/dw/cli-pattern.svg?style=for-the-badge)](https://www.npmjs.com/package/cli-pattern) [![license](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://www.npmjs.com/package/cli-pattern) [![actions status](https://img.shields.io/github/actions/workflow/status/ioncakephper/cli-pattern/ci.yml?branch=main&style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/actions) [![codecov](https://img.shields.io/codecov/c/github/ioncakephper/cli-pattern?branch=main&style=for-the-badge)](https://codecov.io/gh/ioncakephper/cli-pattern) [![release](https://img.shields.io/github/v/release/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/releases) [![maintained](https://img.shields.io/github/commit-activity/y/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/graphs/commit-activity) [![stars](https://img.shields.io/github/stars/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/stargazers) [![forks](https://img.shields.io/github/forks/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/network/members) [![watchers](https://img.shields.io/github/watchers/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/watchers) [![last commit](https://img.shields.io/github/last-commit/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/commits) [![contributors](https://img.shields.io/github/contributors/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/graphs/contributors) [![issues](https://img.shields.io/github/issues/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/issues) [![pull requests](https://img.shields.io/github/issues-pr/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/pulls) [![repo size](https://img.shields.io/github/repo-size/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern) [![top language](https://img.shields.io/github/languages/top/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern) [![languages](https://img.shields.io/github/languages/count/ioncakephper/cli-pattern?style=for-the-badge)](https://github.com/ioncakephper/cli-pattern/search?l=)
+
+ <!-- end-doc-gen -->
 
 ## Unlock Your Development Superpowers: Experience the `cli-pattern` Difference
 
@@ -136,6 +138,7 @@ This section outlines the directory and file structure of the project.
 │   │   └── logger.js          # Source Code: Utility for logging messages.
 │   └── index.js               # Source Code: Main entry point for the application source.
 ├── .gitignore                 # Configuration: Specifies intentionally untracked files to ignore.
+├── .npmcheckrc.json
 ├── .prettierignore            # Configuration: Specifies files to be ignored by Prettier.
 ├── .prettierrc.json           # Configuration: Defines Prettier formatting rules.
 ├── CLI_API.md                 # Documentation: Provides API reference for the CLI.
@@ -145,10 +148,15 @@ This section outlines the directory and file structure of the project.
 ├── package-lock.json          # Dependency Management: Records the exact dependency tree.
 ├── package.json               # Configuration: Project metadata and dependency definitions.
 ├── README.md                  # Documentation: Project overview and instructions.
-└── RULES_OF_CONDUCT.md        # Documentation: Defines rules of conduct for the project community.
+├── RULES_OF_CONDUCT.md        # Documentation: Defines rules of conduct for the project community.
+└── SCRIPTS.md
 ```
 
 <!-- end-doc-gen -->
+
+## Scripts
+
+This project utilizes a variety of npm scripts to automate tasks such as testing, linting, and building. A comprehensive list and description of these scripts can be found in the [CLI Scripts Documentation](SCRIPTS.md).
 
 ## API Reference
 
@@ -168,6 +176,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - [commander](https://www.npmjs.com/package/commander) — the complete solution for node.js command-line programs
 - [cosmiconfig](https://www.npmjs.com/package/cosmiconfig) — Find and load configuration from a package.json property, rc file, TypeScript module, and more!
+- [jest](https://www.npmjs.com/package/jest) — Delightful JavaScript Testing.
+- [markdown-magic-scripts](https://www.npmjs.com/package/markdown-magic-scripts) — Automatically generate a dynamic, customizable dashboard of your npm scripts in your README.md using this markdown-magic transform. Keep your project documentation in sync with your package.json.
 - [markdown-magic-transform-acknowledgements](https://www.npmjs.com/package/markdown-magic-transform-acknowledgements) — A markdown-magic transform that auto-generates an Acknowledgements section for contributors, dependencies, and custom entries.
 - [markdown-magic-transform-badges](https://www.npmjs.com/package/markdown-magic-transform-badges) — No description available
 - [markdown-magic-transform-treefile-extended](https://www.npmjs.com/package/markdown-magic-transform-treefile-extended) — A markdown-magic transform to generate a dynamic file tree in your markdown files. This extended version provides additional options for customizing the output.

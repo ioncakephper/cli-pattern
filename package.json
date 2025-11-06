@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ioncakephper/cli-pattern.git"
+    "url": "git+https://github.com/ioncakephper/cli-pattern.git"
   },
   "license": "MIT",
   "author": "",
@@ -34,18 +34,52 @@
     "docs": "npx markdown-magic@3.7.0 **/*.md -c md.config.js",
     "format": "prettier --write .",
     "format:packagejson": "prettier --write package.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "npm run docs",
+    "precommit": "npm run docs && npm run format",
+    "test": "jest --passWithNoTests",
+    "postuninstall": "npm run docs"
   },
   "dependencies": {
-    "commander": "^12.0.0",
+    "commander": "^14.0.2",
     "cosmiconfig": "^9.0.0"
   },
   "devDependencies": {
     "jest": "^30.2.0",
+    "markdown-magic-scripts": "^1.4.0",
     "markdown-magic-transform-acknowledgements": "^1.2.2",
     "markdown-magic-transform-badges": "^1.1.6",
     "markdown-magic-transform-treefile-extended": "^1.2.1",
     "prettier": "^3.6.2",
     "prettier-plugin-packagejson": "^2.5.19"
+  },
+  "scriptsMeta": {
+    "postinstall": {
+      "description": "Runs after npm install to generate documentation.",
+      "category": "Lifecycle"
+    },
+    "postuninstall": {
+      "description": "Runs after npm uninstall to update documentation.",
+      "category": "Lifecycle"
+    },
+    "docs": {
+      "description": "Generates and updates markdown documentation files.",
+      "category": "Documentation"
+    },
+    "format": {
+      "description": "Formats all code files using Prettier.",
+      "category": "Formatting"
+    },
+    "format:packagejson": {
+      "description": "Formats the package.json file using Prettier.",
+      "category": "Formatting"
+    },
+    "test": {
+      "description": "Runs tests for the project.",
+      "category": "Testing"
+    },
+    "precommit": {
+      "description": "Runs docs and format tasks before commit.",
+      "category": "Lifecycle"
+    }
   }
 }

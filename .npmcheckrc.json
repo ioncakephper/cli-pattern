@@ -1,0 +1,5 @@
+{
+  "depcheck": {
+    "ignoreMatches": ["jest", "prettier-plugin-packagejson"]
+  }
+}
