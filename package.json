@@ -2,22 +2,25 @@
   "name": "cli-pattern",
   "version": "0.1.0",
   "description": "A CLI tool with dynamic command loading and configuration.",
-  "bin": {
-    "cli-pattern": "bin/cli.js"
-  },
   "keywords": [
     "cli",
     "commander",
     "cosmiconfig"
   ],
+  "homepage": "https://github.com/ioncakephper/cli-pattern#readme",
+  "bugs": {
+    "url": "https://github.com/ioncakephper/cli-pattern/issues"
+  },
   "repository": {
     "type": "git",
-    "owner": "ioncakephper",
-    "repo": "cli-pattern",
-    "url": "git+https://github.com/ioncakephper/cli-pattern.git"
+    "url": "https://github.com/ioncakephper/cli-pattern.git"
   },
   "license": "MIT",
   "author": "",
+  "main": "src/index.js",
+  "bin": {
+    "cli-pattern": "bin/cli.js"
+  },
   "files": [
     "bin/",
     "src/",
@@ -27,7 +30,6 @@
     "CONTRIBUTING.md",
     "cli-pattern.config.js"
   ],
-  "main": "src/index.js",
   "scripts": {
     "docs": "npx markdown-magic@3.7.0 **/*.md -c md.config.js",
     "format": "prettier --write .",
@@ -39,6 +41,7 @@
     "cosmiconfig": "^9.0.0"
   },
   "devDependencies": {
+    "jest": "^30.2.0",
     "markdown-magic-transform-acknowledgements": "^1.2.2",
     "markdown-magic-transform-badges": "^1.1.6",
     "markdown-magic-transform-treefile-extended": "^1.2.1",
