@@ -1,10 +1,12 @@
 module.exports = {
-    transformDefaults: {
-        BADGES: {
-            style: "for-the-badge"
-        }
+  transformDefaults: {
+    BADGES: {
+      style: "for-the-badge",
     },
-    transforms: {
-        BADGES: require('markdown-magic-transform-badges')
-    }
-}
+  },
+  transforms: {
+    "STRUCTURE": require("markdown-magic-transform-treefile-extended"),
+    ACK: require("markdown-magic-transform-acknowledgements"),
+    BADGES: require("markdown-magic-transform-badges"),
+  },
+};
