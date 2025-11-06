@@ -32,6 +32,51 @@ Ready to unlock your full potential? With `cli-pattern`, you'll experience a pro
 - **Extensible Design:** Easily integrate with other libraries and tools to extend functionality.
 - **Clear Project Layout:** A well-defined directory structure that promotes best practices.
 
+## Project Structure
+
+This section outlines the directory and file structure of the project.
+
+<!-- doc-gen STRUCTURE root="/"-->
+
+```
+/
+├── bin                        # Folder: Contains executable scripts.
+│   └── cli.js                 # Executable: Main CLI entry point script.
+├── config                     # Folder: Contains configuration files.
+│   └── default.config.js      # Configuration: Default configuration settings.
+├── src                        # Folder: Contains source code files.
+│   ├── commands               # Folder: Contains definitions for CLI commands.
+│   │   ├── example            # Folder: Example CLI command implementation.
+│   │   │   ├── action.js      # Source Code: Action logic for the example command.
+│   │   │   └── index.js       # Source Code: Definition and setup for the example command.
+│   │   ├── quickly            # Folder: Quickly CLI command implementation.
+│   │   │   ├── action.js      # Source Code: Action logic for the quickly command.
+│   │   │   └── index.js       # Source Code: Definition and setup for the quickly command.
+│   │   └── sample             # Folder: Sample CLI command implementation.
+│   │       ├── action.js      # Source Code: Action logic for the sample command.
+│   │       └── index.js       # Source Code: Definition and setup for the sample command.
+│   ├── utils                  # Folder: Contains utility functions.
+│   │   ├── loadCommands.js    # Source Code: Utility for loading CLI commands.
+│   │   └── logger.js          # Source Code: Utility for logging messages.
+│   └── index.js               # Source Code: Main entry point for the application source.
+├── .gitignore                 # Configuration: Specifies intentionally untracked files to ignore.
+├── .npmcheckrc.json
+├── .prettierignore            # Configuration: Specifies files to be ignored by Prettier.
+├── .prettierrc.json           # Configuration: Defines Prettier formatting rules.
+├── CHANGELOG.md
+├── CLI_API.md                 # Documentation: Provides API reference for the CLI.
+├── CONTRIBUTING.md            # Documentation: Guidelines for contributing to the project.
+├── LICENSE                    # Legal: Project license information.
+├── md.config.js               # Configuration: Configuration for markdown processing.
+├── package-lock.json          # Dependency Management: Records the exact dependency tree.
+├── package.json               # Configuration: Project metadata and dependency definitions.
+├── README.md                  # Documentation: Project overview and instructions.
+├── RULES_OF_CONDUCT.md        # Documentation: Defines rules of conduct for the project community.
+└── SCRIPTS.md
+```
+
+<!-- end-doc-gen -->
+
 ## Usage: Crafting Your CLI with `cli-pattern`
 
 This section guides you on how to leverage `cli-pattern` to create new commands and options, and highlights the powerful features available out-of-the-box.
@@ -111,50 +156,6 @@ When you create commands with `cli-pattern`, you automatically benefit from:
 - **Configurable Logging:** Utilize the `logger` object passed to your `action.js` for structured and configurable logging (`info`, `warn`, `error`, `debug`, `verbose`).
 - **Configuration Merging:** Command-specific configurations are automatically merged with global settings, providing a flexible configuration hierarchy.
 - **Version Display:** The CLI automatically handles displaying the version defined in your `package.json`.
-
-## Project Structure
-
-This section outlines the directory and file structure of the project.
-
-<!-- doc-gen STRUCTURE root="/"-->
-
-```
-/
-├── bin                        # Folder: Contains executable scripts.
-│   └── cli.js                 # Executable: Main CLI entry point script.
-├── config                     # Folder: Contains configuration files.
-│   └── default.config.js      # Configuration: Default configuration settings.
-├── src                        # Folder: Contains source code files.
-│   ├── commands               # Folder: Contains definitions for CLI commands.
-│   │   ├── example            # Folder: Example CLI command implementation.
-│   │   │   ├── action.js      # Source Code: Action logic for the example command.
-│   │   │   └── index.js       # Source Code: Definition and setup for the example command.
-│   │   ├── quickly            # Folder: Quickly CLI command implementation.
-│   │   │   ├── action.js      # Source Code: Action logic for the quickly command.
-│   │   │   └── index.js       # Source Code: Definition and setup for the quickly command.
-│   │   └── sample             # Folder: Sample CLI command implementation.
-│   │       ├── action.js      # Source Code: Action logic for the sample command.
-│   │       └── index.js       # Source Code: Definition and setup for the sample command.
-│   ├── utils                  # Folder: Contains utility functions.
-│   │   ├── loadCommands.js    # Source Code: Utility for loading CLI commands.
-│   │   └── logger.js          # Source Code: Utility for logging messages.
-│   └── index.js               # Source Code: Main entry point for the application source.
-├── .gitignore                 # Configuration: Specifies intentionally untracked files to ignore.
-├── .npmcheckrc.json
-├── .prettierignore            # Configuration: Specifies files to be ignored by Prettier.
-├── .prettierrc.json           # Configuration: Defines Prettier formatting rules.
-├── CLI_API.md                 # Documentation: Provides API reference for the CLI.
-├── CONTRIBUTING.md            # Documentation: Guidelines for contributing to the project.
-├── LICENSE                    # Legal: Project license information.
-├── md.config.js               # Configuration: Configuration for markdown processing.
-├── package-lock.json          # Dependency Management: Records the exact dependency tree.
-├── package.json               # Configuration: Project metadata and dependency definitions.
-├── README.md                  # Documentation: Project overview and instructions.
-├── RULES_OF_CONDUCT.md        # Documentation: Defines rules of conduct for the project community.
-└── SCRIPTS.md
-```
-
-<!-- end-doc-gen -->
 
 ## Scripts
 
